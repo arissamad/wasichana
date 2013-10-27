@@ -9,25 +9,101 @@ small {
 	font-style: italic;
 }
 
+body {
+	background-image:url('/images/white_wall_hash.png');
+}
+
 .whole-screen {
-	background: #D7DADB;
 	height: 100%;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.spine {
-	width: 900px;
-	margin: 0 auto;
+.visible-screen {
 	height: 100%;
-	background: white;
 }
 
-.spine-top {
-	background: #6DBCDB;
-	padding: 10px 30px 10px 30px;
-	color: white;
-	margin-bottom: 50px;
-	border-bottom: 2px solid #C4273C;
+header {
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0px 1px 5px #ccc;
+	background: white;
+	color: #666;
+}
+
+header .right {
+	float: right;
+	position: relative;
+}
+
+header .inner {
+	position: absolute;
+	right: 9px;
+	top: 18px;
+	width: 40px;
+}
+
+header .icon {
+	display: inline-block;
+	padding: 5px 8px;
+	border: 1px solid black;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+header .icon:hover {
+	color: black;
+	background: #eee;
+}
+
+header .logo {
+	font-family: Quicksand;
+	font-size: 1.5em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 300px
+	margin: 0 auto;
+}
+
+.top-padding {
+	height: 25%;
+}
+
+.fact-headline {
+	font-family: "Quattrocento Sans";
+	font-size: 3em;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	color: #1693A5;
+}
+
+.fact-headline em {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+.about-section {
+	min-height: 100%;
+}
+
+.about-item {
+	margin-bottom: 20px;
+}
+
+.about-item .label {
+	display: inline-block;
+	font-size: 1.3em;
+	width: 30%;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.about-item .description {
+	display: inline-block;
+	vertical-align: top;
+	border-left: 3px solid #999;
+	padding-left: 20px;
+	min-height: 30px;
 }
 
 .app-content {

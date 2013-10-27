@@ -23,12 +23,6 @@ public class HerokuStarter {
 		System.out.println("Starting Wasichana Server... ");
 		System.out.println("Mode: " + Mode.get().name());
     	
-    	if(args.length > 0 && args[0].equals("nohibernate")) {
-    		System.out.println("Not starting hibernate.");
-    	} else {
-    		HibernateStarter.init("com.sirra");
-    	}
-    	
     	// Set base package for API classes
     	ApiServlet.setAPIPackageBase("com.sirra");
     	

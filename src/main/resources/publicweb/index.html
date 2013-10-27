@@ -1,7 +1,53 @@
 <html>
 <head>
+<title>Wasichana | Know Your Facts</title>
+${template.load-sirrapresentation}
 </head>
+
 <body>
-	<h1>Hello, Wasichana.</h1>
+
+<div class="whole-screen">
+
+<div class="visible-screen">
+	<header>
+	<div class="right">
+	<div class="inner">
+		<div class="about icon entypo-help"></div>
+	</div>
+	</div>
+	<div class="logo">Wasichana.org</div>
+	</header>
+	<div class="top-padding"></div>
+	<div class="fact-headline">Women and children are<br/><em>14 times more likely</em><br/>than men and boys to die in a disaster.</div>
+</div> <!-- visible-screen -->
+
+<div class="about-section">
+	<div style="padding-top: 30px;"></div>
+	<div class="about-item">
+		<div class="label">About</div>
+		<div class="description">We are an advocacy site.</div>
+	</div>
+	<div class="about-item">
+		<div class="label">Hello</div>
+		<div class="description">More descriptions go here.</div>
+	</div>
+</div>
+
+<script>
+function onSirraStart() {
+	window.scrollTo(0, 0);
+	var target = $(".about-section");
+	
+	$(".about").click(function() {
+		$('html,body').animate({
+	    	scrollTop: target.offset().top
+		}, 500);	
+	});
+	
+}  
+</script>
+
+</div>
+
 </body>
 </html>
